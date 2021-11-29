@@ -1,0 +1,286 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28/11/2021, 06:05:05 PM
+    Author     : ADMIN
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #ffffff;
+    width:100%;
+    position: fixed;
+}
+.contenedor-principal{
+    height: 80px;
+    display: inline-flex;
+}
+.contenedor-menu{
+    padding-left: 50px;
+}
+.contenedor-menu ul{
+    padding-top:10px;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 10px;
+    display: flex;
+}
+
+.contenedor-menu li{
+    display: inline-flex;
+    white-space: nowrap;
+
+}
+.contenedor-menu li a{
+    text-decoration: none;
+    color: #000000;
+    padding:20px;
+
+    width: 150px;
+}
+.logo{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.boton-registrar{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+    text-align:center;
+}
+.btn_registrar{
+    position: fixed;
+    font-size: 18px;
+    height: 40px;
+    width: 120px;
+    background: aliceblue;
+    color: black;
+    border-radius: 5%;
+    padding: 5px 5px 5px 5;
+    transition: background-color .5s;
+}
+.boton-registrar a{
+    padding-left: 80px;
+}
+.btn_registrar:hover{
+    position: fixed;
+    background: black;
+    color: white;
+}
+
+.contenedor-menu ul a:hover{
+    background: #000000;
+    color: white;
+}
+
+
+.secciones img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;/*se adapta y no se deforma ciruclo*/
+}
+.contenido{
+    display: flex;
+    margin: 60px;
+    border-bottom: 3px solid #000000;
+}
+.articulos{
+    width: 80%;
+    border-right: 3px solid #000000;
+}
+.secciones{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+.menu-secundario{
+    width:20%;
+    margin-top: 40px;
+
+}
+.menu-secundario p{
+    display:block; /*para poner encima de otro*/
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    padding-left: 70px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 17px; 
+
+}
+.menu-secundario img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; 
+    margin-left: 50px;
+}
+.secciones p{
+    padding-top: 15px;
+}
+/**/
+.secciones2 img{
+    width: 500px;
+    height: 300px;
+
+    object-fit: cover;/*se adapta y no se deforma ciruclo*/
+}
+.contenido2{
+    display: flex;
+    margin: 60px;
+    padding-bottom: 0px;
+  
+}
+.articulos2{
+    width: 100%;
+
+}
+.secciones2{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+.secciones2 p{
+    padding-top: 15px;
+    padding-right: 100px;
+}
+.secciones3{
+    display: flex;
+    align-items: right;
+    padding: 40px;
+}
+.secciones3 p{
+    padding-top: 15px;
+    padding-left: 100px;
+}
+.secciones3 h2{
+    padding-top:100px;
+    padding-left: 80px;
+}
+.secciones3 img{
+    width: 500px;
+    height: 300px;
+
+    object-fit: cover;/*se adapta y no se deforma ciruclo*/
+}
+/**/
+
+
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+/*reproductor*/
+#botones{
+ float: left;
+ width: 70px;
+ height: 100px;
+}
+#botones button{
+    width: 70px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    border-style:none;
+}
+#botones button:hover{
+    width: 70px;
+    background: #ffffff;
+    color: #000000;
+     border: 2px solid #000000;
+}
+#barra{
+    position: relative;
+    float: left;
+    width: 630px;
+    height: 20px;
+    padding: 2px;
+    border: 1px solid #101010;
+    background: #EEEEEE;
+    border-radius: 10px;
+}
+#progreso{
+ position: absolute;
+ width: 100px;
+ height: 14px;
+ background: #000000;
+ border-radius: 10px;
+}
+
+#reproductor{
+ width: 720px;
+ margin: 20px auto;
+ padding: 5px;
+ border-radius: 5px;
+}
